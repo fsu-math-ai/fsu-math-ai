@@ -32,8 +32,7 @@ web directory, and URL. This package has not been uploaded to an FSU server.
 
 PAGES
 index.html         General information and campus photo
-program.html       Workshop schedule
-workshop.html      Workshop topics, lectures, and graduate-student activities
+program.html       Workshop schedule, lectures, discussion topics, and graduate-student activities
 participants.html  Scientific Advisory Committee and organizing team
 registration.html  Registration information
 local.html         Venue, travel, lodging, and accessibility information
@@ -47,7 +46,7 @@ images/            FSU logo (fsu-logo.svg) and campus photograph (fsu-westcott.j
 EDITING
 Edit the .html files in a plain-text/code editor (not a rich-text word processor).
 The title, sidebar, and footer appear in each page. If changing the conference
-dates or navigation, update them consistently across all seven pages.
+dates or navigation, update them consistently across all six pages.
 Edit style.css to change the shared design. There is no build step.
 Keep filenames lowercase and preserve spelling when adding links.
 
@@ -61,6 +60,13 @@ REGISTRATION FORM
 4. In the form, open Responses and turn on email notifications for new responses.
 The dinner fee is $50 per person. The form records who wants the dinner; payment
 is collected separately.
+
+SPEAKER PHOTOS
+Speaker cards on participants.html show initials. To add a photo, save it as
+images/speakers/lastname.jpg (square crop, at least 300 px) and replace
+<div class="photo" aria-hidden="true">XX</div> in that speaker's card with
+<img class="photo" src="images/speakers/lastname.jpg" alt="First Last">.
+Use photos supplied by the speakers.
 
 BEFORE PUBLIC LAUNCH
 - Confirm the conference dates.
