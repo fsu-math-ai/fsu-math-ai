@@ -6,10 +6,10 @@ CONTENT BASIS
 Updated using the Program Summary for the Scientific Advisory Committee
 and the organizers' subsequent October email discussion. Internal source
 documents and emails are not bundled or published with the website.
-The workshop is provisionally planned for April 16–18, 2027, with Friday
+The workshop takes place April 16–18, 2027, with Friday
 activities starting at noon. The focus is practical departmental changes in
 graduate education, research practice, and hiring, tenure, and promotion.
-The balance of lectures and working groups remains provisional. Prospective
+The balance of lectures and working groups is still being set. Prospective
 speaker names have not been added as confirmed participants.
 Funding: FSU Department of Mathematics, FSU College of Arts and Sciences, and
 named professorships (listed on index.html).
