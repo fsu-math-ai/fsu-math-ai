@@ -1,4 +1,4 @@
-MATHEMATICS AT A TURNING POINT — STATIC WEBSITE
+MATHEMATICS IN THE AGE OF AI — STATIC WEBSITE
 Florida State University conference website
 Prepared October 11, 2026
 
@@ -11,11 +11,9 @@ activities starting at noon. The focus is practical departmental changes in
 graduate education, research practice, and hiring, tenure, and promotion.
 The balance of lectures and working groups remains provisional. Prospective
 speaker names have not been added as confirmed participants.
-The workshop is planned for approximately 80 participants, including about
-20 invited speakers or discussion leaders. The three-day summer school's
-dates and funding remain unconfirmed; all three subjects are planned each day.
-FSU department and Dean's Office funding is committed for the workshop.
-The current event title is retained pending agreement on a replacement.
+Funding: FSU Department of Mathematics, FSU College of Arts and Sciences, and
+named professorships (listed on index.html).
+The event title is "Mathematics in the Age of AI".
 
 QUICK PREVIEW
 1. Unzip the downloaded package.
@@ -34,37 +32,51 @@ web directory, and URL. This package has not been uploaded to an FSU server.
 
 PAGES
 index.html         General information and campus photo
-program.html       Workshop schedule and summer-school overview
+program.html       Workshop schedule
 workshop.html      Workshop topics, lectures, and graduate-student activities
-school.html        Graduate summer school
 participants.html  Scientific Advisory Committee and organizing team
-registration.html  Registration and planned student support
+registration.html  Registration information
 local.html         Venue, travel, lodging, and accessibility information
 credits.html       Image sources and acknowledgments
 style.css          Shared colors, fonts, spacing, and responsive layout
 script.js          Mobile navigation menu only
-favicon.svg        Browser-tab icon
-images/            Campus photograph, hosted locally with the site
+favicon.svg        Browser-tab icon (FSU lettering on garnet)
+images/            FSU logo (fsu-logo.svg) and campus photograph (fsu-westcott.jpg),
+                   hosted locally with the site
 
 EDITING
 Edit the .html files in a plain-text/code editor (not a rich-text word processor).
 The title, sidebar, and footer appear in each page. If changing the conference
-dates or navigation, update them consistently across all eight pages.
+dates or navigation, update them consistently across all seven pages.
 Edit style.css to change the shared design. There is no build step.
 Keep filenames lowercase and preserve spelling when adding links.
 
+REGISTRATION FORM
+1. Open script.google.com, click New project, paste the contents of
+   registration-form-setup.gs, and click Run (approve the permissions).
+2. The execution log prints the form link, an embed link, and the link to the
+   Google Sheet that receives every response as a new row.
+3. In registration.html, follow the comment next to the form slot: delete the
+   "Registration is not yet open" block and paste the iframe with the embed link.
+4. In the form, open Responses and turn on email notifications for new responses.
+The dinner fee is $50 per person. The form records who wants the dinner; payment
+is collected separately.
+
 BEFORE PUBLIC LAUNCH
-- Confirm the conference dates and title.
-- Confirm committee names and affiliations, and publish speaker/instructor
+- Confirm the conference dates.
+- Confirm committee names and affiliations, and publish speaker
   names only after they have agreed.
 - Add the application/registration URL, deadlines, and a public contact.
 - Confirm the venue, accessibility contact, lodging, and travel information.
-- Confirm funding and eligibility before making participant-support promises.
 - Remove the draft notice when ready to launch publicly.
-Registration is informational only; no form currently collects data.
+Registration is informational only until the form is embedded.
 No analytics, external fonts, tracking code, or third-party scripts are used.
 
 IMAGES
+images/fsu-logo.svg: Florida State University horizontal lockup (gold, RGB),
+from the FSU digital brand assets, used without alteration. Follow the FSU
+brand guidelines for any further use.
+
 images/fsu-westcott.jpg: Westcott Building and fountain at Florida State
 University, Ernie Stephens (2018). CC0 1.0 Public Domain Dedication.
 Source: https://commons.wikimedia.org/wiki/File:Westcott_Building_and_fountain_at_Florida_State_University.jpg

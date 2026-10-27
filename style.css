@@ -18,7 +18,7 @@ html {
 body {
   margin:0;
   color:var(--ink);
-  background:radial-gradient(circle at 80% 0%,rgba(206,184,136,.11),transparent 28rem),repeating-linear-gradient(90deg,rgba(70,60,45,.018) 0,rgba(70,60,45,.018) 1px,transparent 1px,transparent 4px),var(--paper);
+  background:#fff;
   font-family:Arial,Helvetica,sans-serif;
   line-height:1.62
 }
@@ -34,25 +34,22 @@ body {
   box-shadow:4px 0 18px rgba(37,16,21,.2)
 }
 .mark {
-  display:grid;
-  width:148px;
-  height:148px;
-  margin:0 auto 38px;
-  place-items:center;
-  border:4px solid var(--gold);
-  border-radius:50%;
-  box-shadow:inset 0 0 0 5px var(--g),inset 0 0 0 7px rgba(255,255,255,.72);
+  display:block;
+  width:100%;
+  margin:0 0 12px;
+  text-decoration:none
+}
+.mark img {
+  display:block;
+  width:100%;
+  height:auto
+}
+.sidebar .dept {
+  max-width:none;
+  margin:0 0 40px;
+  padding:12px 0 0 12px;
+  border-top:1px solid rgba(206,184,136,.45);
   color:var(--gold);
-  text-align:center;
-  letter-spacing:.04em
-}
-.mark strong {
-  display:block;
-  font:700 38px/.92 Georgia,serif
-}
-.mark span {
-  display:block;
-  margin-top:7px;
   font-size:10px;
   font-weight:700;
   letter-spacing:.18em;
@@ -185,7 +182,7 @@ p {
   max-width:790px;
   padding:18px 21px;
   border-left:4px solid var(--gold);
-  background:rgba(255,255,255,.53)
+  background:rgba(206,184,136,.14)
 }
 .grid {
   display:grid;
@@ -497,9 +494,6 @@ h1 {
 .mobile-nav {
   display:none
 }
-.mark {
-  text-decoration:none
-}
 main {
   min-height:100vh
 }
@@ -553,32 +547,8 @@ figcaption {
 .page-links a {
   font-weight:700
 }
-.sidebar .mark {
-  color:var(--gold)
-}
 .table-wrap {
   max-width:100%
-}
-.school-table {
-  min-width:630px
-}
-.school-table tbody th {
-  width:145px;
-  background:transparent;
-  color:var(--ink);
-  font-size:14px;
-  text-transform:none;
-  letter-spacing:normal
-}
-.school-table td:first-child {
-  width:auto;
-  white-space:normal
-}
-.school-table caption {
-  text-align:left;
-  padding:12px 14px;
-  color:var(--muted);
-  font-size:13px
 }
 .skip-link {
   position:fixed;
@@ -597,10 +567,21 @@ a:focus-visible,button:focus-visible {
   outline-offset:4px
 }
 .mobile-head a {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:4px;
   color:#fff;
   text-decoration:none;
   font-weight:700;
-  font-size:14px
+  font-size:13px;
+  line-height:1.2
+}
+.mobile-logo {
+  display:block;
+  width:auto;
+  height:22px;
+  margin-left:-5px
 }
 .mobile-nav a[aria-current=page] {
   border-left:3px solid var(--gold)
@@ -642,7 +623,7 @@ footer p {
   padding-top:34px
 }
 .mobile-nav {
-  top:60px
+  top:66px
 }
 .mobile-head {
   min-height:60px
@@ -715,3 +696,29 @@ a {
 
 }
 
+
+/* Smaller campus photo and support list. */
+.campus-photo {
+  max-width:600px
+}
+.campus-photo img {
+  aspect-ratio:1.5
+}
+.support-list {
+  max-width:790px;
+  margin:0 0 16px;
+  padding-left:22px
+}
+.support-list li {
+  margin:0 0 4px
+}
+
+/* Embedded registration form. */
+.form-embed {
+  display:block;
+  width:100%;
+  max-width:790px;
+  height:1500px;
+  margin:10px 0 24px;
+  border:0
+}
