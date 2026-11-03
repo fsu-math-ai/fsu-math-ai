@@ -60,7 +60,7 @@ if (form) {
       const done = document.createElement('div');
       done.className = 'notice';
       done.setAttribute('role', 'status');
-      done.innerHTML = '<strong>Thank you for registering.</strong> If you selected the conference dinner ($50), payment instructions will be sent to the email address you provided.';
+      done.innerHTML = '<strong>Thank you for registering.</strong> Dinner payment details will be sent closer to the event.';
       form.insertAdjacentElement('afterend', done);
       done.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } catch (error) {

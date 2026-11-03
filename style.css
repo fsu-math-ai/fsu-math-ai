@@ -883,3 +883,6 @@ a {
   border-left-color:var(--g);
   background:rgba(120,47,64,.08)
 }
+
+.speaker strong a { color:var(--g); text-decoration:none; }
+.speaker strong a:hover, .speaker strong a:focus { text-decoration:underline; }

@@ -68,8 +68,8 @@ If you change the script later, use Deploy > Manage deployments > Edit > New
 version so the same URL keeps working.
 Until the URL is set, the form shows "Registration is not open yet."
 The dinner fee is $50 per person. The form records who wants the dinner; payment
-is collected separately, and the thank-you message tells people instructions
-will follow by email. (registration-form-setup.gs is an older Google Forms
+is collected separately, and the thank-you message says payment details will
+be sent closer to the event (you send these yourself). (registration-form-setup.gs is an older Google Forms
 alternative and is not needed.)
 
 SPEAKER PHOTOS
