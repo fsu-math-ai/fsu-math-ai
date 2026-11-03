@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer>
 </script>
+<script src="registration.js" defer>
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -56,7 +58,79 @@
 </article>
 </div>
 <h2 class="subheading">Register</h2>
-<iframe class="form-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSf32Cbx_-XjIwcR6t5SVisHoaUJQJuNeHdaR2NhCkDEEgbGYQ/viewform?embedded=true" title="Registration form">Loading</iframe>
+<form class="reg-form" id="reg-form" novalidate>
+<p class="reg-note">Fields marked <span class="req">*</span> are required.</p>
+<div class="field">
+<label for="f-name">Full name <span class="req">*</span></label>
+<input type="text" id="f-name" name="name" autocomplete="name" required maxlength="200">
+</div>
+<div class="field">
+<label for="f-email">Email <span class="req">*</span></label>
+<input type="email" id="f-email" name="email" autocomplete="email" required maxlength="200">
+</div>
+<div class="field">
+<label for="f-inst">Institution <span class="req">*</span></label>
+<input type="text" id="f-inst" name="institution" autocomplete="organization" required maxlength="300">
+</div>
+<div class="field">
+<label for="f-dept">Department</label>
+<input type="text" id="f-dept" name="department" maxlength="300">
+</div>
+<div class="field">
+<label for="f-pos">Position <span class="req">*</span></label>
+<select id="f-pos" name="position" required>
+<option value="">Select</option>
+<option>Faculty</option>
+<option>Department chair or administrator</option>
+<option>Postdoctoral researcher</option>
+<option>Graduate student</option>
+<option>Other</option>
+</select>
+</div>
+<div class="field" id="pos-other-wrap" hidden>
+<label for="f-pos-other">Other position</label>
+<input type="text" id="f-pos-other" name="positionOther" maxlength="100">
+</div>
+<fieldset class="field" id="days-group">
+<legend>Days attending <span class="req">*</span></legend>
+<label class="choice"><input type="checkbox" name="days" value="Friday, April 16"> Friday, April 16</label>
+<label class="choice"><input type="checkbox" name="days" value="Saturday, April 17"> Saturday, April 17</label>
+<label class="choice"><input type="checkbox" name="days" value="Sunday, April 18"> Sunday, April 18</label>
+</fieldset>
+<fieldset class="field">
+<legend>Working-group topics of interest <span class="hint">Optional</span></legend>
+<label class="choice"><input type="checkbox" name="topics" value="Hiring, tenure, and promotion"> Hiring, tenure, and promotion</label>
+<label class="choice"><input type="checkbox" name="topics" value="Graduate education"> Graduate education</label>
+<label class="choice"><input type="checkbox" name="topics" value="Research practice and refereeing"> Research practice and refereeing</label>
+</fieldset>
+<div class="field">
+<label for="f-questions">Questions for the panels <span class="hint">Optional. Questions submitted in advance will be passed to the moderators.</span></label>
+<textarea id="f-questions" name="questions" maxlength="3000"></textarea>
+</div>
+<fieldset class="field" id="dinner-group">
+<legend>Conference dinner, $50 per person <span class="req">*</span></legend>
+<label class="choice"><input type="radio" name="dinner" value="Yes" required> Yes, I will attend the dinner ($50)</label>
+<label class="choice"><input type="radio" name="dinner" value="No"> No</label>
+</fieldset>
+<div class="field" id="dietary-wrap" hidden>
+<label for="f-diet">Dietary restrictions <span class="hint">Optional</span></label>
+<input type="text" id="f-diet" name="dietary" maxlength="500">
+</div>
+<div class="field">
+<label for="f-access">Accessibility needs <span class="hint">Optional</span></label>
+<textarea id="f-access" name="accessibility" maxlength="1000"></textarea>
+</div>
+<fieldset class="field">
+<legend>May we list your name and institution on the website? <span class="req">*</span></legend>
+<label class="choice"><input type="radio" name="listing" value="Yes" required> Yes</label>
+<label class="choice"><input type="radio" name="listing" value="No"> No</label>
+</fieldset>
+<div class="hp" aria-hidden="true">
+<label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+</div>
+<button type="submit" class="reg-submit">Submit registration</button>
+<p class="reg-status" id="reg-status" role="status" aria-live="polite" hidden></p>
+</form>
 <p>For venue and travel updates, see <a href="local.html">Local information</a>.</p>
 </article>
 <footer>

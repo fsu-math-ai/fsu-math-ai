@@ -33,8 +33,9 @@ web directory, and URL. This package has not been uploaded to an FSU server.
 PAGES
 index.html         General information and campus photo
 program.html       Workshop schedule, lectures, discussion topics, and graduate-student activities
-participants.html  Scientific Advisory Committee and organizing team
-registration.html  Registration information
+participants.html  Speakers, Scientific Advisory Committee and organizing team
+registration.html  Registration form
+registration.js    Sends the form to the Google Sheet (set the web app URL here)
 local.html         Venue, travel, lodging, and accessibility information
 credits.html       Image sources and acknowledgments
 style.css          Shared colors, fonts, spacing, and responsive layout
@@ -51,15 +52,25 @@ Edit style.css to change the shared design. There is no build step.
 Keep filenames lowercase and preserve spelling when adding links.
 
 REGISTRATION FORM
-1. Open script.google.com, click New project, paste the contents of
-   registration-form-setup.gs, and click Run (approve the permissions).
-2. The execution log prints the form link, an embed link, and the link to the
-   Google Sheet that receives every response as a new row.
-3. In registration.html, follow the comment next to the form slot: delete the
-   "Registration is not yet open" block and paste the iframe with the embed link.
-4. In the form, open Responses and turn on email notifications for new responses.
+The form on registration.html is part of the site (same look as every page).
+registration.js sends each submission to a Google Apps Script web app, which
+adds a row to a Google Sheet that you own.
+1. Create a Google Sheet (name it e.g. "Registrations").
+2. In the Sheet: Extensions > Apps Script. Delete the sample code, paste the
+   contents of registration-backend.gs, and save.
+3. Optional: put an address in NOTIFY_EMAIL to be emailed on each registration.
+4. Deploy > New deployment > type "Web app". Execute as: Me. Who has access:
+   Anyone. Click Deploy and approve the permissions.
+5. Copy the Web app URL (it ends in /exec) and paste it into registration.js
+   in place of PASTE-WEB-APP-URL-HERE. Upload registration.js again.
+6. Submit a test registration on the live site and check the Sheet.
+If you change the script later, use Deploy > Manage deployments > Edit > New
+version so the same URL keeps working.
+Until the URL is set, the form shows "Registration is not open yet."
 The dinner fee is $50 per person. The form records who wants the dinner; payment
-is collected separately.
+is collected separately, and the thank-you message tells people instructions
+will follow by email. (registration-form-setup.gs is an older Google Forms
+alternative and is not needed.)
 
 SPEAKER PHOTOS
 Speaker cards on participants.html show initials. To add a photo, save it as
@@ -75,7 +86,7 @@ BEFORE PUBLIC LAUNCH
 - Add the application/registration URL, deadlines, and a public contact.
 - Confirm the venue, accessibility contact, lodging, and travel information.
 - Remove the draft notice when ready to launch publicly.
-Registration is informational only until the form is embedded.
+Registration stays closed until the web app URL is set in registration.js.
 No analytics, external fonts, tracking code, or third-party scripts are used.
 
 IMAGES
