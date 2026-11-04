@@ -33,7 +33,8 @@ web directory, and URL. This package has not been uploaded to an FSU server.
 PAGES
 index.html         General information and campus photo
 program.html       Workshop schedule, lectures, discussion topics, and graduate-student activities
-participants.html  Speakers, Scientific Advisory Committee and organizing team
+participants.html  Speakers
+organizers.html    Organizing and Scientific Advisory Committees, with contact emails
 registration.html  Registration form
 registration.js    Sends the form to the Google Sheet (set the web app URL here)
 local.html         Venue, travel, lodging, and accessibility information

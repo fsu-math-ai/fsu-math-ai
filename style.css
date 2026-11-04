@@ -886,3 +886,5 @@ a {
 
 .speaker strong a { color:var(--g); text-decoration:none; }
 .speaker strong a:hover, .speaker strong a:focus { text-decoration:underline; }
+
+.person a { display:block; margin-top:6px; font-size:14px; overflow-wrap:anywhere; }
