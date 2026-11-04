@@ -74,7 +74,8 @@ be sent closer to the event (you send these yourself). (registration-form-setup.
 alternative and is not needed.)
 
 SPEAKER PHOTOS
-Speaker cards on participants.html show initials. To add a photo, save it as
+Speaker cards on participants.html show photos from images/speakers/ (lastname.jpg).
+To add or replace a photo, save it as
 images/speakers/lastname.jpg (square crop, at least 300 px) and replace
 <div class="photo" aria-hidden="true">XX</div> in that speaker's card with
 <img class="photo" src="images/speakers/lastname.jpg" alt="First Last">.

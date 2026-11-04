@@ -888,3 +888,5 @@ a {
 .speaker strong a:hover, .speaker strong a:focus { text-decoration:underline; }
 
 .person a { display:block; margin-top:6px; font-size:14px; overflow-wrap:anywhere; }
+
+.speaker img.photo { display:block; background:var(--line); }
