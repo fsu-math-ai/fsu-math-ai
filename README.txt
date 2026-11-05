@@ -38,7 +38,6 @@ registration.html  Registration form
 registration.js    Sends the form to the Google Sheet (set the web app URL here)
 invited.js         Same for the private invited-speaker page
 local.html         Venue, travel, lodging, and accessibility information
-credits.html       Image sources and acknowledgments
 style.css          Shared colors, fonts, spacing, and responsive layout
 script.js          Mobile navigation menu only
 favicon.svg        Browser-tab icon (FSU lettering on garnet)
