@@ -9,8 +9,7 @@ documents and emails are not bundled or published with the website.
 The workshop takes place April 16–18, 2027, with Friday
 activities starting at noon. The focus is practical departmental changes in
 graduate education, research practice, and hiring, tenure, and promotion.
-The balance of lectures and working groups is still being set. Prospective
-speaker names have not been added as confirmed participants.
+Speakers are listed on participants.html.
 Funding: FSU Department of Mathematics, FSU College of Arts and Sciences, and
 named professorships (listed on index.html).
 The event title is "Mathematics in the Age of AI".
@@ -82,12 +81,8 @@ images/speakers/lastname.jpg (square crop, at least 300 px) and replace
 Use photos supplied by the speakers.
 
 BEFORE PUBLIC LAUNCH
-- Confirm the conference dates.
-- Confirm committee names and affiliations, and publish speaker
-  names only after they have agreed.
-- Add the application/registration URL, deadlines, and a public contact.
-- Confirm the venue, accessibility contact, lodging, and travel information.
-- Remove the draft notice when ready to launch publicly.
+- Add the building and room, lodging, and parking details to local.html.
+- Publish speaker names only after they have agreed.
 Registration stays closed until the web app URL is set in registration.js.
 No analytics, external fonts, tracking code, or third-party scripts are used.
 
@@ -101,7 +96,7 @@ University, Ernie Stephens (2018). CC0 1.0 Public Domain Dedication.
 Source: https://commons.wikimedia.org/wiki/File:Westcott_Building_and_fountain_at_Florida_State_University.jpg
 License: https://creativecommons.org/publicdomain/zero/1.0/
 The original photograph is included without pixel edits; CSS may crop its
-display. It depicts the campus, not a confirmed conference venue.
+display. It depicts the campus.
 
 VERIFICATION
 All internal page/image/style/script links have been checked, as have page
