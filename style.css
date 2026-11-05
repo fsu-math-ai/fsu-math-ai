@@ -805,6 +805,7 @@ a {
 }
 .reg-form input[type=text],
 .reg-form input[type=email],
+.reg-form input[type=date],
 .reg-form select,
 .reg-form textarea {
   display:block;

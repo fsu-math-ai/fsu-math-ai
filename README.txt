@@ -36,6 +36,7 @@ participants.html  Speakers
 organizers.html    Organizing and Scientific Advisory Committees, with contact emails
 registration.html  Registration form
 registration.js    Sends the form to the Google Sheet (set the web app URL here)
+invited.js         Same for the private invited-speaker page
 local.html         Venue, travel, lodging, and accessibility information
 credits.html       Image sources and acknowledgments
 style.css          Shared colors, fonts, spacing, and responsive layout
@@ -71,6 +72,19 @@ The dinner fee is $50 per person. The form records who wants the dinner; payment
 is collected separately, and the thank-you message says payment details will
 be sent closer to the event (you send these yourself). (registration-form-setup.gs is an older Google Forms
 alternative and is not needed.)
+
+PRIVATE FORM FOR INVITED SPEAKERS
+invited-b0955a53.html is an unlisted page: no page links to it, it is not in the
+menu, and it asks search engines not to index it. Share its address only with
+invited participants: https://fsu-math-ai.github.io/fsu-math-ai/invited-b0955a53.html
+Its answers go to a separate tab, "Invited speakers", in the same Google Sheet.
+This needs the updated registration-backend.gs: paste it over the old script,
+then Deploy > Manage deployments > pencil icon > Version: New version > Deploy.
+The web app URL does not change. invited.js holds a copy of the same URL as
+registration.js; change both if the URL ever changes.
+Note: anyone with the address can open the page, and the file name is visible in
+the public GitHub repository. Do not collect passport numbers, birth dates, or
+other sensitive personal data on it.
 
 SPEAKER PHOTOS
 Speaker cards on participants.html show photos from images/speakers/ (lastname.jpg).
