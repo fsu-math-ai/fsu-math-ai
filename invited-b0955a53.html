@@ -48,10 +48,10 @@
 <div class="page">
 <article>
 <h1>Invited participants</h1>
-<p>This page is for invited speakers, panelists, and discussion leaders of the April 16–18, 2027 workshop. Please complete the form below. If anything is unclear, contact the <a href="organizers.html">organizers</a>.</p>
+<p>This page is for invited speakers, panelists, and discussion leaders of the April 16–18, 2027 workshop. The organizers will arrange travel and lodging. Please send us your contact details and travel dates using the form below. If anything is unclear, contact the <a href="organizers.html">organizers</a>.</p>
 <form class="reg-form" id="reg-form" novalidate>
 <input type="hidden" name="formType" value="invited">
-<p class="reg-note">Fields marked <span class="req">*</span> are required.</p>
+<p class="reg-note">All fields are required.</p>
 <div class="field">
 <label for="f-name">Full name <span class="req">*</span></label>
 <input type="text" id="f-name" name="name" autocomplete="name" required maxlength="200">
@@ -61,62 +61,24 @@
 <input type="email" id="f-email" name="email" autocomplete="email" required maxlength="200">
 </div>
 <div class="field">
+<label for="f-phone">Phone number <span class="req">*</span></label>
+<input type="tel" id="f-phone" name="phone" autocomplete="tel" required maxlength="40">
+</div>
+<div class="field">
 <label for="f-inst">Institution <span class="req">*</span></label>
 <input type="text" id="f-inst" name="institution" autocomplete="organization" required maxlength="300">
 </div>
-<fieldset class="field">
-<legend>Participation <span class="hint">Optional. Check all that apply.</span></legend>
-<label class="choice"><input type="checkbox" name="participation" value="Lecture"> Lecture</label>
-<label class="choice"><input type="checkbox" name="participation" value="Panel"> Panel</label>
-<label class="choice"><input type="checkbox" name="participation" value="Working group"> Working group</label>
-<label class="choice"><input type="checkbox" name="participation" value="Not sure yet"> Not sure yet</label>
-</fieldset>
 <div class="field">
-<label for="f-title">Talk title <span class="hint">Optional</span></label>
-<input type="text" id="f-title" name="talkTitle" maxlength="300">
+<label for="f-dob">Date of birth <span class="req">*</span> <span class="hint">Needed for the hotel reservation.</span></label>
+<input type="date" id="f-dob" name="dob" autocomplete="bday" required>
 </div>
 <div class="field">
-<label for="f-abstract">Abstract or description <span class="hint">Optional</span></label>
-<textarea id="f-abstract" name="abstract" maxlength="4000"></textarea>
+<label for="f-arrival">Arrival date <span class="req">*</span></label>
+<input type="date" id="f-arrival" name="arrival" required>
 </div>
 <div class="field">
-<label for="f-bio">Short bio and website <span class="hint">Optional. For the website and program.</span></label>
-<textarea id="f-bio" name="bio" maxlength="3000"></textarea>
-</div>
-<div class="field">
-<label for="f-arrival">Planned arrival date <span class="hint">Optional</span></label>
-<input type="date" id="f-arrival" name="arrival">
-</div>
-<div class="field">
-<label for="f-departure">Planned departure date <span class="hint">Optional</span></label>
-<input type="date" id="f-departure" name="departure">
-</div>
-<fieldset class="field">
-<legend>Will you need help with travel or lodging? <span class="req">*</span></legend>
-<label class="choice"><input type="radio" name="travelHelp" value="Yes" required> Yes</label>
-<label class="choice"><input type="radio" name="travelHelp" value="No"> No</label>
-<label class="choice"><input type="radio" name="travelHelp" value="Not sure"> Not sure</label>
-</fieldset>
-<fieldset class="field">
-<legend>Will you attend the conference dinner? <span class="hint">Optional</span></legend>
-<label class="choice"><input type="radio" name="dinner" value="Yes"> Yes</label>
-<label class="choice"><input type="radio" name="dinner" value="No"> No</label>
-</fieldset>
-<div class="field">
-<label for="f-diet">Dietary restrictions <span class="hint">Optional</span></label>
-<input type="text" id="f-diet" name="dietary" maxlength="500">
-</div>
-<div class="field">
-<label for="f-access">Accessibility needs <span class="hint">Optional</span></label>
-<textarea id="f-access" name="accessibility" maxlength="1000"></textarea>
-</div>
-<div class="field">
-<label for="f-equip">Equipment or room needs for your session <span class="hint">Optional</span></label>
-<textarea id="f-equip" name="equipment" maxlength="1000"></textarea>
-</div>
-<div class="field">
-<label for="f-comments">Other comments <span class="hint">Optional</span></label>
-<textarea id="f-comments" name="comments" maxlength="3000"></textarea>
+<label for="f-departure">Departure date <span class="req">*</span></label>
+<input type="date" id="f-departure" name="departure" required>
 </div>
 <div class="hp" aria-hidden="true">
 <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>

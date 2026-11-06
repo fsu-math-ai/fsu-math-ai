@@ -82,8 +82,11 @@ then Deploy > Manage deployments > pencil icon > Version: New version > Deploy.
 The web app URL does not change. invited.js holds a copy of the same URL as
 registration.js; change both if the URL ever changes.
 Note: anyone with the address can open the page, and the file name is visible in
-the public GitHub repository. Do not collect passport numbers, birth dates, or
-other sensitive personal data on it.
+the public GitHub repository. The form asks for date of birth (for hotel
+bookings). Keep the Google Sheet private (share it only with the organizers who
+need it) and delete the date-of-birth column once the hotel is booked.
+If the "Invited speakers" tab already holds test rows from an older version of the
+form, delete that tab before redeploying so the new columns are created.
 
 SPEAKER PHOTOS
 Speaker cards on participants.html show photos from images/speakers/ (lastname.jpg).
