@@ -32,8 +32,8 @@ web directory, and URL. This package has not been uploaded to an FSU server.
 PAGES
 index.html         General information and campus photo
 program.html       Workshop schedule, lectures, discussion topics, and graduate-student activities
-participants.html  Speakers
-organizers.html    Organizing and Scientific Advisory Committees, with contact emails
+participants.html  Scientific Advisory Committee, then speakers and panelists (with photos and short bios)
+organizers.html    Organizing Committee, with contact emails
 registration.html  Registration form
 registration.js    Sends the form to the Google Sheet (set the web app URL here)
 invited.js         Same for the private invited-speaker page
@@ -94,7 +94,7 @@ To add or replace a photo, save it as
 images/speakers/lastname.jpg (square crop, at least 300 px) and replace
 <div class="photo" aria-hidden="true">XX</div> in that speaker's card with
 <img class="photo" src="images/speakers/lastname.jpg" alt="First Last">.
-Use photos supplied by the speakers.
+Use photos supplied by the speakers. Committee photos are in images/committee/.
 
 BEFORE PUBLIC LAUNCH
 - Add the building and room, lodging, and parking details to local.html.
